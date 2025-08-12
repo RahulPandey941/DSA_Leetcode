@@ -13,7 +13,7 @@ public:
             }
             i-- ; 
             chars[j++] = ch;
-            
+            int countlen = log10(count)+1 ;
             if (count > 1) {
                 string countStr = to_string(count);
                 for (char c : countStr) {
