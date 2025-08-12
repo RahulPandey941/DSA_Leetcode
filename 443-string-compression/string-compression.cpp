@@ -22,6 +22,7 @@ public:
                 }
             }
         }
+        chars.resize(j);
         return j ;
     }
 };
