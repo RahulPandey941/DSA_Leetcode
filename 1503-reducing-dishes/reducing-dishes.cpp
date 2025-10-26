@@ -10,7 +10,8 @@ public:
             for(int j = i; j<size;j++){
                 sum += satisfaction[j] * counter++ ;
             }
-            maxSum = max(sum , maxSum);
+            if(sum>maxSum) maxSum =sum;
+            else break;
         }
         return maxSum;
     }
